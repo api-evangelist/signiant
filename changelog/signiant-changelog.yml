@@ -1,0 +1,12 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.signiant.com/release-notes/
+scheme: dated-release-notes
+current_version: v1
+changelog_url: https://developer.signiant.com/release-notes/
+entries: []
+notes: >-
+  Signiant publishes dated Release Notes for the developer platform. The
+  release-notes index is rendered client-side (Gatsby), so individual dated
+  entries were not machine-extractable during this pass; the canonical
+  changelog URL is captured as the source of truth.

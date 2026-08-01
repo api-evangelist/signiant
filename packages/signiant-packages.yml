@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://registry.npmjs.org/@signiant/media-shuttle-sdk
+packages:
+- language: javascript
+  registry: npm
+  name: "@signiant/media-shuttle-sdk"
+  version: 1.5.0
+  url: https://www.npmjs.com/package/@signiant/media-shuttle-sdk
+  install: npm install @signiant/media-shuttle-sdk
+  description: The SDK for supporting file transfer to and from Media Shuttle.
+  official: true
+  publisher: signiant-npm
+- language: javascript
+  registry: npm
+  name: "@signiant/media-shuttle-sdk-base"
+  version: 2.1.0
+  url: https://www.npmjs.com/package/@signiant/media-shuttle-sdk-base
+  install: npm install @signiant/media-shuttle-sdk-base
+  description: The base parent SDK behind other Media Shuttle SDKs (e.g. media-shuttle-sdk).
+  official: true
+  publisher: signiant-npm
+docs: https://developer.signiant.com/media-shuttle/media-shuttle-sdk/
+notes: >-
+  Signiant publishes the Media Shuttle browser SDK under the @signiant npm scope
+  (publisher signiant-npm). No first-party client libraries were found on PyPI,
+  Maven Central, NuGet, pkg.go.dev, RubyGems, Packagist, or crates.io. The
+  Signiant GitHub organization (github.com/Signiant, 172 public repos) hosts
+  additional tooling.

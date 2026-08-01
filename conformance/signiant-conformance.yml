@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.signiant.com/technology/security/
+standards:
+- id: oauth2
+  conforms: true
+  evidence: All APIs authenticate with OAuth 2.0 client_credentials returning a JWT bearer token.
+- id: oauth2-client-credentials
+  conforms: true
+  evidence: Documented grant_type client_credentials at /oauth/token.
+- id: jwt
+  conforms: true
+  evidence: The access_token issued is a JSON Web Token valid for one hour.
+- id: soc2
+  conforms: true
+  evidence: Signiant cites SOC 2 on its security page and UpGuard trust center.
+- id: tpn
+  conforms: true
+  evidence: Trusted Partner Network (TPN) assessed, cited on the security page.
+- id: mpa
+  conforms: true
+  evidence: MPA (Motion Picture Association) content-security best-practices cited on the security page.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No application/problem+json usage observed in the public docs.
+- id: oidc
+  conforms: false
+  evidence: No OpenID Connect discovery document published.
+compliance_page: https://www.signiant.com/technology/security/
+trust_center: https://trust.signiant.com/

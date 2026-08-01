@@ -1,0 +1,39 @@
+# Signiant
+
+> Signiant provides intelligent file-movement software that moves large files fast and securely over public and private networks. The SaaS Signiant Platform unifies four products behind a common OAuth-secured REST API, all authenticating with a client_id/client_secret pair exchanged for a one-hour JWT bearer token at platform-api-service.services.cloud.signiant.com.
+
+## APIs
+
+- [Signiant Platform API](https://developer.signiant.com/signiant-platform/api-documentation/): Manage storage, endpoints, users, and roles across Signiant products.
+- [Signiant Jet API](https://developer.signiant.com/jet/api-documentation/): Automate system-to-system job creation, endpoint management, notifications, and event webhooks.
+- [Signiant Media Shuttle API](https://developer.signiant.com/media-shuttle/getting-started/): Automate portal management and person-initiated transfers via Platform, Management, and System-to-Person APIs.
+- [Signiant Flight Deck Manager REST API](https://developer.signiant.com/flight-deck/api-documentation/): Schedule and run jobs, manage users, and control Signiant Manager software.
+
+## Authentication
+
+- [Getting Started / OAuth](https://developer.signiant.com/signiant-platform/getting-started/): OAuth 2.0 client_credentials → one-hour JWT bearer token at /oauth/token.
+- [User Roles on the Signiant Platform](https://developer.signiant.com/signiant-platform/user-roles-on-the-signiant-platform/): Product-scoped account roles.
+
+## Webhooks
+
+- [Jet Event Webhooks](https://developer.signiant.com/jet/webhook-reference/)
+- [Media Shuttle System-to-Person Webhooks](https://developer.signiant.com/media-shuttle/getting-started/)
+
+## SDKs
+
+- [Media Shuttle SDK](https://developer.signiant.com/media-shuttle/media-shuttle-sdk/): npm @signiant/media-shuttle-sdk
+
+## Docs
+
+- [Developer Portal](https://developer.signiant.com/)
+- [Code Samples](https://code-samples.developer.signiant.com/)
+- [Release Notes](https://developer.signiant.com/release-notes/)
+- [Support](https://support.signiant.com/)
+- [Blog](https://www.signiant.com/blog/)
+
+## Operations
+
+- [Status Page](https://status.signiant.com/)
+- [Trust Center](https://trust.signiant.com/)
+- [Security](https://www.signiant.com/technology/security/): SOC 2, TPN, MPA.
+- [Pricing](https://www.signiant.com/platform-pricing_page/)

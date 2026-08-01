@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.signiant.com/jet/webhook-reference/
+spec_type: Webhooks
+description: >-
+  Signiant documents event webhooks across several products. No AsyncAPI
+  document is published; this captures the webhook surface only.
+webhook_surfaces:
+- product: Jet
+  name: Jet Event Webhooks
+  docs: https://developer.signiant.com/jet/webhook-reference/
+  examples: https://developer.signiant.com/jet/jet-webhook-event-examples/
+  summary: Subscribe to Jet job/transfer lifecycle events for automation and notifications.
+- product: Media Shuttle
+  name: System-to-Person API Webhooks
+  docs: https://developer.signiant.com/media-shuttle/system-to-person-api-webhooks/
+  summary: Subscribe to Media Shuttle notification events (upload/download link activity).
+- product: Media Engine
+  name: Media Engine Webhooks
+  docs: https://developer.signiant.com/signiant-platform/media-engine-webhooks/
+  summary: Media Engine platform event webhooks.
+notes: >-
+  Webhook reference pages are rendered client-side (Swagger UI/Gatsby); the
+  event schemas were not machine-extractable in this pass. Webhook surface
+  confirmed present from the developer portal navigation and reference pages.

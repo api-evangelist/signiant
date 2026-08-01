@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: derived
+status: candidate
+source: https://developer.signiant.com/jet/getting-started/
+server:
+  name: signiant
+  transport: http
+  url: null
+notes: >-
+  No official hosted or remote Signiant MCP server was found (docs, npm
+  @modelcontextprotocol, MCP registries). The tools below are a CANDIDATE list
+  derived from operations documented in the public Jet / Platform getting-started
+  guides. They are grounded in real REST endpoints but are not an authoritative
+  operation inventory (the full API reference is behind client-side Swagger UI).
+tools:
+- name: get_endpoints
+  description: List the transfer endpoints configured in the Signiant account.
+  source_operation: GET https://platform-api-service.services.cloud.signiant.com/v1/endpoints
+- name: create_storage_profile
+  description: Create a source or destination storage profile from an endpoint.
+  source_operation: Signiant Platform API - storage profiles
+- name: create_job
+  description: Create a Jet transfer job between source and destination storage profiles.
+  source_operation: Signiant Jet API - jobs
+- name: list_jobs
+  description: Retrieve Jet transfer jobs and their status.
+  source_operation: Signiant Jet API - jobs

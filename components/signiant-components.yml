@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.signiant.com/media-shuttle/media-shuttle-sdk/
+components:
+- family: Media Shuttle SDK
+  kind: browser-embeddable transfer component
+  description: >-
+    A JavaScript SDK/component library for embedding Media Shuttle accelerated
+    upload and download into a web application, published on npm under the
+    @signiant scope.
+  loader_libraries:
+  - "@signiant/media-shuttle-sdk"
+  - "@signiant/media-shuttle-sdk-base"
+  docs: https://developer.signiant.com/media-shuttle/media-shuttle-sdk/
+notes: >-
+  The Media Shuttle SDK is a client-side embeddable component for adding
+  accelerated file transfer UI/behavior to an application; the packages are also
+  catalogued in packages/signiant-packages.yml.

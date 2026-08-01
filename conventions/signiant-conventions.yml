@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.signiant.com/signiant-platform/getting-started/
+authentication:
+  style: oauth2-client-credentials
+  token: Bearer JWT (expires_in 3600s)
+  token_endpoint: https://platform-api-service.services.cloud.signiant.com/oauth/token
+  ref: authentication/signiant-authentication.yml
+versioning:
+  style: uri-path
+  current: v1
+  example: /v1/endpoints
+media_type:
+  request: application/json
+  response: application/json
+idempotency:
+  supported: unknown
+  notes: No idempotency-key header or contract is documented in the public getting-started guides.
+pagination:
+  style: unknown
+  notes: Not documented in the public getting-started pages.
+request_tracing:
+  request_id_header: unknown
+error_envelope:
+  ref: null
+  notes: The public getting-started pages do not document a canonical error envelope; the API reference is rendered via Swagger UI.
+rate_limit_signaling:
+  ref: null
+  notes: No rate-limit headers documented in the public getting-started pages.
+network:
+  egress_requirement: Clients must allow firewall access to *.cloud.signiant.com.
+cross_links:
+  authentication: authentication/signiant-authentication.yml
+  lifecycle: lifecycle/signiant-lifecycle.yml
+  webhooks: asyncapi/signiant-webhooks.yml

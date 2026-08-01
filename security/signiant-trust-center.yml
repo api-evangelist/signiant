@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+url: https://trust.signiant.com/
+platform: UpGuard Trust Center
+certifications:
+- SOC 2
+- TPN (Trusted Partner Network)
+- MPA (Motion Picture Association best practices)
+evidence:
+- source: https://trust.signiant.com/
+  keywords: [trust center, upguard]
+- source: https://www.signiant.com/technology/security/
+  keywords: [soc 2, tpn, mpa]
+notes: >-
+  Signiant hosts a public UpGuard-backed trust center at trust.signiant.com and
+  documents Hollywood-grade security on its technology/security page. Named
+  certifications SOC 2, TPN, and MPA were confirmed from the security page text;
+  the trust center itself renders detail client-side.

@@ -1,0 +1,53 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.signiant.com/signiant-platform/getting-started/
+docs: https://developer.signiant.com/signiant-platform/getting-started/
+summary:
+  types: [oauth2]
+  oauth2_flows: [clientCredentials]
+  token_type: Bearer JWT
+  token_ttl_seconds: 3600
+  credential_issuance: Signiant Customer Care issues the client_id / client_secret pair (not self-serve)
+schemes:
+- name: OAuth2ClientCredentials
+  type: oauth2
+  flow: clientCredentials
+  token_url: https://platform-api-service.services.cloud.signiant.com/oauth/token
+  grant_type: client_credentials
+  request_body: '{ "client_id": "<client_id>", "client_secret": "<client_secret>", "grant_type": "client_credentials" }'
+  response: '{ "access_token": "<jwt>", "expires_in": 3600, "token_type": "Bearer" }'
+  applied_as: Authorization Bearer <access_token>
+  notes: >-
+    A JSON Web Token (JWT) valid for one hour. All product APIs (Platform, Jet,
+    Media Shuttle, Flight Deck) share this token endpoint. Clients must allow
+    firewall egress to *.cloud.signiant.com.
+roles:
+  description: >-
+    Access is governed by product-scoped account roles bound to the credentials,
+    not by OAuth scopes. Roles seen in the docs:
+  values:
+  - product: Flight Deck
+    service_account_type: MANAGER_AND_AGENTS_SAAS
+    role: MANAGER_AND_AGENTS_SAAS_ADMIN
+  - product: Flight Deck
+    service_account_type: MANAGER_AND_AGENTS_SAAS
+    role: MANAGER_AND_AGENTS_SAAS_VIEW_ONLY
+  - product: Flight Deck
+    service_account_type: FLIGHT_GATEWAY
+    role: FLIGHT_GATEWAY_ADMIN
+  - product: Jet
+    service_account_type: S2S
+    role: S2S_ADMIN
+  - product: Jet
+    service_account_type: S2S
+    role: JET_VIEW_ONLY
+  - product: Media Engine
+    service_account_type: MEDIA_ENGINE
+    role: MEDIA_ENGINE_IT_ADMIN
+  - product: Media Engine
+    service_account_type: MEDIA_ENGINE
+    role: MEDIA_ENGINE_USER
+  - product: Media Shuttle
+    service_account_type: MEDIA_SHUTTLE
+    role: MEDIA_SHUTTLE_IT_ADMIN
+  docs: https://developer.signiant.com/signiant-platform/user-roles-on-the-signiant-platform/

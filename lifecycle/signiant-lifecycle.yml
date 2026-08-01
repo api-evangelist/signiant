@@ -1,0 +1,17 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.signiant.com/
+versioning:
+  scheme: uri-path
+  current: v1
+  evidence: Endpoints are served under /v1/ (e.g. /v1/endpoints) on the platform API host.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No published deprecation/sunset-header policy was found.
+sla:
+  url: null
+  uptime_target: null
+status_page: https://status.signiant.com/
+release_notes: https://developer.signiant.com/release-notes/
+deprecated_operations: []

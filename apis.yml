@@ -1,7 +1,17 @@
 aid: signiant
 name: Signiant
-description: Signiant is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Signiant provides intelligent file-movement software that helps the world's
+  top content creators and distributors move large files fast and securely over
+  public and private networks. The SaaS Signiant Platform unifies four products
+  behind a common OAuth-secured REST API: the Signiant Platform API (storage,
+  endpoints, users, and roles across products), Jet (automated system-to-system
+  transfers with event webhooks), Media Shuttle (person-initiated transfers with
+  Platform, Management, and System-to-Person APIs plus a browser SDK), and
+  Flight Deck (the Manager REST API for scheduling and running jobs). All APIs
+  authenticate with a client_id/client_secret pair exchanged for a one-hour
+  OAuth 2.0 JWT bearer token at platform-api-service.services.cloud.signiant.com,
+  and access is governed by product-scoped account roles.
 url: https://raw.githubusercontent.com/api-evangelist/signiant/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +19,144 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://www.signiant.com/wp-content/uploads/signiant-logo.png
 tags:
-- Company
-apis: []
+- File Transfer
+- Media Supply Chain
+- Managed File Transfer
+- Content Delivery
+- Storage
+- Webhooks
+- OAuth
+- Media & Entertainment
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Signiant Platform API
+  description: >-
+    Unified API to manage storage, endpoints, users, and roles across multiple
+    Signiant products. Authenticates via OAuth 2.0 client_credentials, returning
+    a one-hour JWT bearer token.
+  humanURL: https://developer.signiant.com/signiant-platform/api-documentation/
+  baseURL: https://platform-api-service.services.cloud.signiant.com
+  properties:
+  - type: Documentation
+    url: https://developer.signiant.com/signiant-platform/api-documentation/
+  - type: GettingStarted
+    url: https://developer.signiant.com/signiant-platform/getting-started/
+- name: Signiant Jet API
+  description: >-
+    Automates system-to-system job creation, endpoint management, job
+    notifications, and event webhooks for unattended, accelerated file transfers.
+  humanURL: https://developer.signiant.com/jet/api-documentation/
+  baseURL: https://platform-api-service.services.cloud.signiant.com
+  properties:
+  - type: Documentation
+    url: https://developer.signiant.com/jet/api-documentation/
+  - type: GettingStarted
+    url: https://developer.signiant.com/jet/getting-started/
+  - type: Webhooks
+    url: https://developer.signiant.com/jet/webhook-reference/
+- name: Signiant Media Shuttle API
+  description: >-
+    Automates Media Shuttle portal management and person-initiated transfers via
+    the Platform API, Management API, and System-to-Person Automation API, with
+    notification webhooks and a browser SDK for app integration.
+  humanURL: https://developer.signiant.com/media-shuttle/getting-started/
+  baseURL: https://platform-api-service.services.cloud.signiant.com
+  properties:
+  - type: Documentation
+    url: https://developer.signiant.com/media-shuttle/platform-api-documentation/
+  - type: GettingStarted
+    url: https://developer.signiant.com/media-shuttle/getting-started/
+  - type: SDK
+    url: https://developer.signiant.com/media-shuttle/media-shuttle-sdk/
+- name: Signiant Flight Deck Manager REST API
+  description: >-
+    Schedules and runs jobs, manages users, and controls Signiant Manager
+    software (Flight Deck) via a REST API.
+  humanURL: https://developer.signiant.com/flight-deck/api-documentation/
+  baseURL: https://platform-api-service.services.cloud.signiant.com
+  properties:
+  - type: Documentation
+    url: https://developer.signiant.com/flight-deck/api-documentation/
+  - type: GettingStarted
+    url: https://developer.signiant.com/flight-deck/getting-started/
+common:
+- type: DomainSecurity
+  url: security/signiant-domain-security.yml
+- type: DeveloperPortal
+  url: https://developer.signiant.com/
+- type: Documentation
+  url: https://developer.signiant.com/
+- type: APIReference
+  url: https://developer.signiant.com/signiant-platform/api-documentation/
+- type: GettingStarted
+  url: https://developer.signiant.com/signiant-platform/getting-started/
+- type: Authentication
+  url: authentication/signiant-authentication.yml
+- type: Support
+  url: https://support.signiant.com/
+- type: Blog
+  url: https://www.signiant.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/Signiant
+- type: Pricing
+  url: https://www.signiant.com/platform-pricing_page/
+- type: TermsOfService
+  url: https://www.signiant.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.signiant.com/privacy/
+- type: StatusPage
+  url: https://status.signiant.com/
+- type: TrustCenter
+  url: https://trust.signiant.com/
+- type: Compliance
+  url: https://www.signiant.com/technology/security/
+- type: CodeSamples
+  url: https://code-samples.developer.signiant.com/
+- type: Packages
+  url: packages/signiant-packages.yml
+- type: SDKs
+  url: packages/signiant-packages.yml
+- type: Webhooks
+  url: asyncapi/signiant-webhooks.yml
+- type: Lifecycle
+  url: lifecycle/signiant-lifecycle.yml
+- type: ChangeLog
+  url: changelog/signiant-changelog.yml
+- type: Conventions
+  url: conventions/signiant-conventions.yml
+- type: Conformance
+  url: conformance/signiant-conformance.yml
+- type: WellKnown
+  url: well-known/signiant-well-known.yml
+- type: MCPServer
+  url: mcp/signiant-mcp.yml
+- type: LLMsTxt
+  url: llms/signiant-llms.txt
+- type: Components
+  url: components/signiant-components.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v1
