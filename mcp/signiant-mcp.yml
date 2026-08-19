@@ -6,11 +6,9 @@ server:
   name: signiant
   transport: http
   url: null
-notes: >-
-  No official hosted or remote Signiant MCP server was found (docs, npm
-  @modelcontextprotocol, MCP registries). The tools below are a CANDIDATE list
-  derived from operations documented in the public Jet / Platform getting-started
-  guides. They are grounded in real REST endpoints but are not an authoritative
+notes: No official hosted or remote Signiant MCP server was found (docs, npm @modelcontextprotocol, MCP
+  registries). The tools below are a CANDIDATE list derived from operations documented in the public Jet
+  / Platform getting-started guides. They are grounded in real REST endpoints but are not an authoritative
   operation inventory (the full API reference is behind client-side Swagger UI).
 tools:
 - name: get_endpoints
@@ -25,3 +23,9 @@ tools:
 - name: list_jobs
   description: Retrieve Jet transfer jobs and their status.
   source_operation: Signiant Jet API - jobs
+deployment:
+  mode: none
+  verified: derived
+  tools: 4
+  checked: '2026-08-12'
+  source: catalog MCP census
