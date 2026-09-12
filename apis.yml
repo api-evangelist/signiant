@@ -121,6 +121,8 @@ apis:
   - type: GettingStarted
     url: https://developer.signiant.com/flight-deck/getting-started/
 common:
+- type: Website
+  url: https://www.signiant.com/
 - type: DomainSecurity
   url: security/signiant-domain-security.yml
 - type: DeveloperPortal
