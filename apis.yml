@@ -44,7 +44,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-10-06'
 image: https://www.signiant.com/wp-content/uploads/signiant-logo.png
 tags:
 - File Transfer
@@ -121,6 +121,8 @@ apis:
   - type: GettingStarted
     url: https://developer.signiant.com/flight-deck/getting-started/
 common:
+- url: https://www.signiant.com/feed/
+  type: BlogRSS
 - type: Website
   url: https://www.signiant.com/
 - type: DomainSecurity
