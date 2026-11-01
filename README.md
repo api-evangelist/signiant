@@ -64,6 +64,114 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Signiant is a company surfaced as a portfolio company of battery-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Signiant provides intelligent file-movement software that helps the world's top content creators and distributors move large files fast and securely over public and private networks. The SaaS Signiant Platform unifies four products behind a common OAuth-secured REST API: the Signiant Platform API (storage, endpoints, users, and roles across products), Jet (automated system-to-system transfers with event webhooks), Media Shuttle (person-initiated transfers with Platform, Management, and System-to-Person APIs plus a browser SDK), and Flight Deck (the Manager REST API for scheduling and running jobs). All APIs authenticate with a client_id/client_secret pair exchanged for a one-hour OAuth 2.0 JWT bearer token at platform-api-service.services.cloud.signiant.com, and access is governed by product-scoped account roles.
 
-Backed by: battery-ventures
+**Areas:** File Transfer · Media Supply Chain · Managed File Transfer · Content Delivery · Storage · Webhook · Authentication · Media and Entertainment
+
+## Signiant on APIs.io
+
+Everything profiled for Signiant is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/signiant/](https://apis.io/providers/signiant/)** — or go straight to one of the APIs or properties below.
+
+### APIs (4)
+
+- [Signiant Platform API](https://apis.io/apis/signiant/signiant-platform-api/) — Unified API to manage storage, endpoints, users, and roles across multiple Signiant products. Authenticates via OAuth 2.0 client_credentials, returning a…
+- [Signiant Jet API](https://apis.io/apis/signiant/signiant-jet-api/) — Automates system-to-system job creation, endpoint management, job notifications, and event webhooks for unattended, accelerated file transfers.
+- [Signiant Media Shuttle API](https://apis.io/apis/signiant/signiant-media-shuttle-api/) — Automates Media Shuttle portal management and person-initiated transfers via the Platform API, Management API, and System-to-Person Automation API, with…
+- [Signiant Flight Deck Manager REST API](https://apis.io/apis/signiant/signiant-flight-deck-manager-rest-api/) — Schedules and runs jobs, manages users, and controls Signiant Manager software (Flight Deck) via a REST API.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Signiant Webhooks](https://apis.io/asyncapis/signiant/signiant-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [signiant](https://apis.io/servers/signiant/signiant/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Signiant Authentication](https://apis.io/security/signiant/signiant-authentication/)
+- [Signiant Domain Security](https://apis.io/security/signiant/signiant-domain-security/)
+- [Signiant Trust Center](https://apis.io/security/signiant/signiant-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.signiant.com/)
+- [Documentation](https://developer.signiant.com/)
+- [Getting started](https://developer.signiant.com/signiant-platform/getting-started/)
+- [API reference](https://developer.signiant.com/signiant-platform/api-documentation/)
+- [Pricing](https://www.signiant.com/platform-pricing_page/)
+- [Support](https://support.signiant.com/)
+- [Blog](https://www.signiant.com/blog/)
+- [Compliance](https://www.signiant.com/technology/security/)
+- [Trust centre](https://trust.signiant.com/)
+- [Terms of service](https://www.signiant.com/terms-of-use/)
+- [Privacy policy](https://www.signiant.com/privacy/)
+- [GitHub](https://github.com/Signiant)
+- [Status](https://status.signiant.com/)
+
+## API Evangelist rating
+
+**Kin Score 49.7** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 45.3 |
+| Contract governance | 18.2 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 64.3 |
+| Access clarity | 39.5 |
+
+**Agent readiness 21.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/signiant/](https://apis.io/providers/signiant/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Signiant: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/signiant/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
